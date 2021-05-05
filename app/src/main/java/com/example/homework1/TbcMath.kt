@@ -4,8 +4,8 @@ import android.util.Log.d
 
 fun main() {
     val math = TbcMath()
-    println("udidesi saerto gamyofi - ${math.gcdOf(15, 48)}")
-    println("umciresi saerto jeradi - ${math.lcmOf(54, 3)}")
+    println("udidesi saerto gamyofi - ${math.commonDivisorOf(15, 48)}")
+    println("umciresi saerto jeradi - ${math.commonMultiplyOf(54, 3)}")
     println("sheicavs simbolos \$ - ${math.containsDollar("ads\$hdsdf")}")
     println("luwebis jami 100-mde - ${math.sumOfEven(100)}")
     println("shebrunebuli ricxvi - ${math.reverseInt(2450)}")
@@ -17,7 +17,7 @@ class TbcMath {
     /**
      * @return the Greatest Common Divisor of two numbers
      */
-    fun gcdOf(num1: Int, num2: Int): Int {
+    fun commonDivisorOf(num1: Int, num2: Int): Int {
         return if (num2 != 0)
             gcdOf(num2, num1 % num2)
         else
@@ -27,7 +27,7 @@ class TbcMath {
     /**
      * @return the Lowest Common Multiple of two numbers
      */
-    fun lcmOf(num1: Int, num2: Int): Int {
+    fun commonMultiplyOf(num1: Int, num2: Int): Int {
         return (num1 * num2 / gcdOf(num1, num2))
     }
 
