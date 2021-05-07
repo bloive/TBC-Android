@@ -10,10 +10,16 @@ fun main() {
 }
 
 class Tbc {
+    /**
+     * @return distinct numbers
+     */
     fun differentNums(intArray : List<Int>) : Int {
         return intArray.distinct().size
     }
 
+    /**
+     * @return xommon elements of two lists
+     */
     fun commonNumbers( list1: List<Int>, list2: List<Int>) : List<Int> {
         val commonList = mutableListOf<Int>()
         for (i in list1.indices) {
@@ -25,6 +31,9 @@ class Tbc {
         return commonList
     }
 
+    /**
+     * @return concatinated lists
+     */
     fun joinLists (list1: List<Int>, list2: List<Int>) : List<Int> {
         val newList = mutableListOf<Int>()
         for (element in list1)
@@ -34,6 +43,9 @@ class Tbc {
         return newList
     }
 
+    /**
+     * @return elements less then tehir mean
+     */
     fun lessThanMean (list : List<Int>) : List<Int> {
         val meansList = mutableListOf<Int>()
         var sum = 0
@@ -49,6 +61,9 @@ class Tbc {
         return meansList
     }
 
+    /**
+     * @return second min and second max elements of the list
+     */
     fun secondMinMax (list : List<Int>) : List<Int> {
         var resultList = mutableListOf<Int>()
         val sortedSet = list.sorted()
