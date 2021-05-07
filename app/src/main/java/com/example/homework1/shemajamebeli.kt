@@ -11,7 +11,7 @@ fun main() {
 
 class Tbc {
     /**
-     * @return distinct numbers
+     * @return number of distinct elements
      */
     fun differentNums(intArray : List<Int>) : Int {
         return intArray.distinct().size
