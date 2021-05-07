@@ -65,7 +65,7 @@ class Tbc {
      * @return second min and second max elements of the list
      */
     fun secondMinMax (list : List<Int>) : List<Int> {
-        var resultList = mutableListOf<Int>()
+        val resultList = mutableListOf<Int>()
         val sortedSet = list.sorted()
         println("sorted $sortedSet")
         resultList.add(sortedSet[1])
